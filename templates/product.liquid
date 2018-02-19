@@ -14,3 +14,20 @@
     unavailable: {{ 'products.product.unavailable' | t | json }}
   }
 </script>
+
+<!-- Bold: Loyalty Points - Step 4.2 -->
+ <div class="bold-loyalties-redeem"></div>
+<!-- // end bold code -->
+
+<!-- Bold: Loyalty Points - Step 4 -->
+{% if shop.metafields.bold_loyalties.active == 1 %}    
+ <div class="bold-loyalties-redeem-amount">or <span class="bold-placeholder"></span></div>
+{% endif %}
+<!-- // end bold code -->
+<!-- Bold: Loyalty Points - Step 4.1 -->
+<div class="bold-loyalties-earn"></div>
+<!-- // end bold code -->
+
+<!-- Bold: Loyalty Points - Step 4.3 -->
+ {% include 'bold-loyalties-product' %}
+<!-- // end bold code -->

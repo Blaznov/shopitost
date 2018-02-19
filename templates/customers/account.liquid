@@ -1,6 +1,9 @@
 <div class="page-width">
   <div class="section-header text-center">
     <h1>{{ 'customer.account.title' | t }}</h1>
+    <!-- Bold: Loyalty Points - Step 3 -->
+{% include 'bold-loyalties-customer-transactions' %}
+<!-- // end bold code -->
     {{ 'layout.customer.log_out' | t | customer_logout_link }}
   </div>
 
